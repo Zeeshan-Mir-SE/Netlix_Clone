@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    background: black;
+    color: white;
+  }
+  .logo-wrap{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: clamp(16px, 3vw, 30px) clamp(20px, 4vw, 60px);
+  }
+  .logo-wrap img{
+    width: clamp(100px, 12vw, 150px);
+  }
+  .line{
+    width: 100%;
+    background-color: #2a2a2a;
+    height: 1px;
+  }
+  .container-wrap{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 0 clamp(20px, 4vw, 60px);
+  }
+  .container {
+    max-width: 460px;
+    width: 100%;
+    margin-top: clamp(50px, 10vw, 100px);
+  }
+  h1 {
+    font-size: clamp(24px, 4vw, 32px);
+    margin-bottom: clamp(10px, 1.5vw, 16px);
+  }
+  p.subtext {
+    font-size: clamp(13px, 1.6vw, 16px);
+    color: #b3b3b3;
+    margin-bottom: clamp(16px, 2.5vw, 24px);
+  }
+  input {
+    width: 100%;
+    padding: clamp(12px, 2vw, 16px);
+    margin-bottom: clamp(12px, 2vw, 16px);
+    background-color: #121212;
+    border: 1px solid #6b6b6b;
+    color: white;
+    font-size: clamp(14px, 1.6vw, 16px);
+    border-radius: 4px;
+  }
+  input::placeholder{
+    color: #8c8c8c;
+  }
+  button {
+    width: 100%;
+    padding: clamp(12px, 2vw, 16px);
+    background-color: #e50914;
+    border: none;
+    color: white;
+    font-size: clamp(15px, 1.8vw, 18px);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: clamp(20px, 3vw, 30px);
+  }
+  button:hover {
+    background-color: #f6121d;
+  }
+  .help {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: clamp(14px, 1.6vw, 16px);
+    color: white;
+    cursor: pointer;
+    margin-bottom: clamp(30px, 5vw, 50px);
+  }
+  .help svg{
+    width: 14px;
+    height: 14px;
+  }
+  .recaptcha {
+    font-size: clamp(11px, 1.3vw, 13px);
+    color: #8c8c8c;
+  }
+  .login-footer{
+    background-color: #1a1a1a;
+    padding: clamp(30px, 5vw, 60px) clamp(20px, 4vw, 60px);
+    color: #737373;
+    margin-top: clamp(60px, 10vw, 120px);
+  }
+  .login-footer-inner{
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .login-footer-contact{
+    color: white;
+    font-size: clamp(14px, 1.6vw, 17px);
+    margin-bottom: clamp(24px, 4vw, 40px);
+  }
+  .login-footer-contact a{
+    color: white;
+    text-decoration: underline;
+  }
+  .login-footer-links{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(14px, 2vw, 24px) clamp(15px, 2vw, 40px);
+    max-width: 900px;
+  }
+  .login-footer-links a{
+    color: #737373;
+    font-size: clamp(12px, 1.4vw, 15px);
+    text-decoration: underline;
+  }
+  .login-footer-links a:hover{
+    color: #b3b3b3;
+  }
+  @media (max-width: 600px){
+    .login-footer-links{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
